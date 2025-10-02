@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="MiPaginaWeb.html">Inicio</a></li>
+            <li><a href="Miformulario.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required 
+                   pattern="[A-Za-z\s]{2,50}" 
+                   placeholder="Ingresa tu nombre completo" 
+                   title="Solo letras y espacios, mínimo 2 caracteres"><br><br>
+
+
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" required 
+                   placeholder="Ej: Consulta sobre cursos"><br><br>
+
+
+            <label for="tipo">Tipo de consulta:</label><br>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option value="general">Consulta general</option>
+                <option value="tecnica">Soporte técnico</option>
+                <option value="curso">Información de cursos</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="50" required 
+                      placeholder="Describe tu consulta en detalle..."></textarea><br><br>
+
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">Acepto los términos de privacidad</label><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </main>
+</body>
+</html>
